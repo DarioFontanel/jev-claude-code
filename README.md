@@ -38,6 +38,12 @@ prompt / diff ──▶ Jev (domande tipizzate) ──▶ probabilità ──▶
 
 **Claude Code ≥ 2.1.276** — i prompt 01 e 02 usano i function hook, una funzionalità in early access che si attiva con la variabile `CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1`. Il prompt la imposta nei settings del progetto. Poiché l'interfaccia può cambiare fra le release, ogni prompt fa generare i tipi del tuo build e li considera prioritari rispetto al proprio testo.
 
+La skill `/plugin-authoring`, che Claude Code mette a disposizione per scrivere function hook, compare solo con gli hook abilitati. Per usarla fuori dai progetti già configurati, avvia Claude Code con la variabile impostata:
+
+```bash
+CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude
+```
+
 **API key TypeSafe** — si crea su [console.typesafe.ai](https://console.typesafe.ai/keys). L'accesso è in early access: dopo la richiesta può servire fino a un giorno.
 
 **Python 3.10+ e git** — solo per il prompt 03, senza dipendenze esterne.
